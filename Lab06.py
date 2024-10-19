@@ -5,9 +5,12 @@ def encode(password):
         encoded_password += str(encoded_digit)
     return encoded_password #returns encoded pass
 
-
+#decoded by Michael Wei
 def decode(encoded_password):
-    pass
+    decoded_password = ""
+    for char in encoded_password:
+        decoded_password  += str((int(char) + 10 - 3) % 10)
+    return decoded_password
 
 def main():
     encoded_password = None #variable to store encoded password
