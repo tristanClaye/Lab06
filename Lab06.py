@@ -1,4 +1,4 @@
-def encode(password: str):
+def encode(password):
     encoded_password = ''
     for char in password: #loops through each character of the password
         encoded_digit = (int(char) + 3) % 10 #changes characters to ints then shifts by 3
@@ -6,7 +6,7 @@ def encode(password: str):
     return encoded_password #returns encoded pass
 
 
-def decode(encoded_password: str):
+def decode(encoded_password):
     pass
 
 def main():
